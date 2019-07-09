@@ -2,9 +2,11 @@ module BuckwalterTests where
 
 import Test.Hspec
 
+import Buckwalter
+
 buckwalterSpecs :: Spec
 buckwalterSpecs =
   do
-    describe "dummySpec" $ do
-      it "should just be true" $ do
-        True `shouldBe` True
+    describe "romanization" $ do
+      it "should return an apostrophe for ARABIC LETTER HAMZA" $ do
+        romanization 'ء' `shouldBe` '\''
