@@ -33,3 +33,6 @@ buckwalterSpecs =
       it ("should return a lowercase p for " ++
           "ARABIC LETTER TEH MARBUTA") $ do
         romanization 'ة' `shouldBe` 'p'
+      it ("should return a lowercase t for " ++
+          "ARABIC LETTER TEH") $ do
+        romanization 'ت' `shouldBe` 't'
