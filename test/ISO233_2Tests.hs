@@ -1,14 +1,14 @@
 -- Implementation of the transliteration system:
 -- named ISO 233-2.
-module ISO232Tests where
+module ISO233_2Tests where
 
 import Test.Hspec
 
-import ISO232
+import ISO233_2
 
 
-iso232Specs :: Spec
-iso232Specs = 
+iso233_2Specs :: Spec
+iso233_2Specs = 
   do
     describe "romanization_iso232" $ do
       it ("should return an MODIFIER LETTER RIGHT HALF RING" ++
