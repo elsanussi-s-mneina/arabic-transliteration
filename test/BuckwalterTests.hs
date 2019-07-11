@@ -159,3 +159,155 @@ buckwalterSpecs =
       it ("should return capital G for " ++
           "ARABIC LETTER GAF") $ do
         romanization 'گ' `shouldBe` 'G'
+    describe "deromanization" $ do
+      it "should when given an apostrophe return ARABIC LETTER HAMZA" $ do
+        deromanization '\'' `shouldBe` 'ء'
+      it "should when given a pipe return ARABIC LETTER ALEF WITH MADDA ABOVE" $ do
+        deromanization '|' `shouldBe` 'آ'
+      it ("should when given a greater than sign return ARABIC LETTER ALEF " ++
+          "WITH HAMZA ABOVE") $ do
+        deromanization '>' `shouldBe` 'أ'
+      it ("should when given an ampersand return ARABIC LETTER WAW " ++
+          "WITH HAMZA ABOVE") $ do
+        deromanization '&' `shouldBe` 'ؤ'
+      it ("should when given a less than sign return " ++
+          "ARABIC LETTER ALEF WITH HAMZA BELOW") $ do
+        deromanization '<' `shouldBe` 'إ'
+      it ("should when given a right brace return " ++
+          "ARABIC LETTER YEH WITH HAMZA ABOVE") $ do
+        deromanization '}' `shouldBe` 'ئ'
+      it ("should when given a capital A return " ++
+          "ARABIC LETTER ALEF") $ do
+        deromanization 'A' `shouldBe` 'ا'
+      it ("should when given a lowercase b return " ++
+          "ARABIC LETTER BEH") $ do
+        deromanization 'b' `shouldBe` 'ب'
+      it ("should when given a lowercase p return " ++
+          "ARABIC LETTER TEH MARBUTA") $ do
+        deromanization 'p' `shouldBe` 'ة'
+      it ("should when given a lowercase t return " ++
+          "ARABIC LETTER TEH") $ do
+        deromanization 't' `shouldBe` 'ت'
+      it ("should when given a lowercase v return " ++
+          "ARABIC LETTER THEH") $ do
+        deromanization 'v' `shouldBe` 'ث'
+      it ("should when given a lowercase j return " ++
+          "ARABIC LETTER JEEM") $ do
+        deromanization 'j' `shouldBe` 'ج'
+      it ("should when given an uppercase H return " ++
+          "ARABIC LETTER HAH") $ do
+        deromanization 'H' `shouldBe` 'ح'
+      it ("should when given a lowercase x return " ++
+          "ARABIC LETTER KHAH") $ do
+        deromanization 'x' `shouldBe` 'خ'
+      it ("should when given a lowercase d return " ++
+          "ARABIC LETTER DAL") $ do
+        deromanization 'd' `shouldBe` 'د'
+      it ("should when given an asterisk return " ++
+          "ARABIC LETTER THAL") $ do
+        deromanization '*' `shouldBe` 'ذ'
+      it ("should when given a lowercase r return " ++
+          "ARABIC LETTER REH") $ do
+        deromanization 'r' `shouldBe` 'ر'
+      it ("should when given a lowercase z return " ++
+          "ARABIC LETTER ZAIN") $ do
+        deromanization 'z' `shouldBe` 'ز'
+      it ("should when given a lowercase s return " ++
+          "ARABIC LETTER SEEN") $ do
+        deromanization 's' `shouldBe` 'س'
+      it ("should when given a dollar sign $ return " ++
+          "ARABIC LETTER SHEEN") $ do
+        deromanization '$' `shouldBe` 'ش'
+      it ("should when given a capital S return " ++
+          "ARABIC LETTER SAD") $ do
+        deromanization 'S' `shouldBe` 'ص'
+      it ("should when given a capital D return " ++
+          "ARABIC LETTER DAD") $ do
+        deromanization 'D' `shouldBe` 'ض'
+      it ("should when given a capital T return " ++
+          "ARABIC LETTER TAH") $ do
+        deromanization 'T' `shouldBe` 'ط'
+      it ("should when given a capital Z return " ++
+          "ARABIC LETTER ZAH") $ do
+        deromanization 'Z' `shouldBe` 'ظ'
+      it ("should when given a capital E return " ++
+          "ARABIC LETTER AIN") $ do
+        deromanization 'E' `shouldBe` 'ع'
+      it ("should when given a lowercase g return " ++
+          "ARABIC LETTER GHAIN") $ do
+        deromanization 'g' `shouldBe` 'غ'
+      it ("should when given an underscore _ return " ++
+          "ARABIC TATWEEL") $ do
+        deromanization '_' `shouldBe` 'ـ'
+      it ("should when given a lowercase f return " ++
+          "ARABIC LETTER FEH") $ do
+        deromanization 'f' `shouldBe` 'ف'
+      it ("should when given a lowercase q return " ++
+          "ARABIC LETTER QAF") $ do
+        deromanization 'q' `shouldBe` 'ق'
+      it ("should when given a lowercase k return " ++
+          "ARABIC LETTER KAF") $ do
+        deromanization 'k' `shouldBe` 'ك'
+      it ("should when given a lowercase l return " ++
+          "ARABIC LETTER LAM") $ do
+        deromanization 'l' `shouldBe` 'ل'
+      it ("should when given a lowercase m return " ++
+          "ARABIC LETTER MEEM") $ do
+        deromanization 'm' `shouldBe` 'م'
+      it ("should when given a lowercase n return " ++
+          "ARABIC LETTER NOON") $ do
+        deromanization 'n' `shouldBe` 'ن'
+      it ("should when given a lowercase h return " ++
+          "ARABIC LETTER HEH") $ do
+        deromanization 'h' `shouldBe` 'ه'
+      it ("should when given a lowercase w return " ++
+          "ARABIC LETTER WAW") $ do
+        deromanization 'w' `shouldBe` 'و'
+      it ("should when given a capital Y return " ++
+          "ARABIC LETTER ALEF MAKSURA") $ do
+        deromanization 'Y' `shouldBe` 'ى'
+      it ("should when given a lowercase y return " ++
+          "ARABIC LETTER YEH") $ do
+        deromanization 'y' `shouldBe` 'ي'
+      it ("should when given a capital F return " ++
+          "ARABIC FATHATAN") $ do
+         deromanization 'F' `shouldBe`  'ً'
+      it ("should when given a capital N return " ++
+          "ARABIC DAMMATAN") $ do
+         deromanization 'N' `shouldBe`  'ٌ'
+      it ("should when given a capital K return " ++
+          "ARABIC KASRATAN") $ do
+         deromanization 'K' `shouldBe`  'ٍ'
+      it ("should when given a lowercase a return " ++
+          "ARABIC FATHA") $ do
+        deromanization 'a' `shouldBe`  'َ'
+      it ("should when given a lowercase u return " ++
+          "ARABIC DAMMA") $ do
+        deromanization 'u' `shouldBe`  'ُ'
+      it ("should when given a lowercase i return " ++
+          "ARABIC KASRA") $ do
+        deromanization 'i' `shouldBe`  'ِ'
+      it ("should when given tilde return " ++
+          "ARABIC SHADDA") $ do
+        deromanization '~' `shouldBe`  'ّ'
+      it ("should when given o return " ++
+          "ARABIC SUKUN")  $ do
+        deromanization 'o' `shouldBe`  'ْ'
+      it ("should when given backtick return " ++
+          "ARABIC LETTER SUPERSCRIPT ALEF") $ do
+        deromanization '`' `shouldBe` 'ٰ'
+      it ("should when given left brace return " ++
+          "ARABIC LETTER ALEF WASLA") $ do
+        deromanization '{' `shouldBe`  'ٱ'
+      it ("should when given capital P return " ++
+          "ARABIC LETTER PEH") $ do
+        deromanization 'P' `shouldBe`  'پ'
+      it ("should when given capital J return " ++
+          "ARABIC LETTER TCHEH") $ do
+        deromanization 'J' `shouldBe`  'چ'
+      it ("should when given capital V return " ++
+          "ARABIC LETTER VEH") $ do
+        deromanization 'V' `shouldBe` 'ڤ'
+      it ("should when given capital G return " ++
+          "ARABIC LETTER GAF") $ do
+        deromanization 'G' `shouldBe` 'گ'
