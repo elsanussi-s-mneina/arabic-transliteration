@@ -317,5 +317,5 @@ buckwalterSpecs =
         deromanization 'G' `shouldBe` 'گ'
       it ("should return space for space") $ do
         deromanization ' ' `shouldBe` ' '
-      it ("should return question mark for Arabic question mark") $ do
+      it ("should return Arabic question mark for question mark") $ do
         deromanization '?' `shouldBe` '؟'

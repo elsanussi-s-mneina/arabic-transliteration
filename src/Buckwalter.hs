@@ -55,7 +55,7 @@ romanization 'گ' = 'G'
 
 -- The following are not defined in the Buckwalter transliteration system
 -- but are needed in practice
-romanization '؟' = '?'
+romanization '؟' = '?'  -- Question mark
 romanization  x = x
 
 
