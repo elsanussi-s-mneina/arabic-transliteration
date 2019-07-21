@@ -159,6 +159,10 @@ buckwalterSpecs =
       it ("should return capital G for " ++
           "ARABIC LETTER GAF") $ do
         romanization 'گ' `shouldBe` 'G'
+      it ("should return space for space") $ do
+        romanization ' ' `shouldBe` ' '
+      it ("should return question mark for Arabic question mark") $ do
+        romanization '؟' `shouldBe` '?'
     describe "deromanization" $ do
       it "should when given an apostrophe return ARABIC LETTER HAMZA" $ do
         deromanization '\'' `shouldBe` 'ء'
@@ -311,3 +315,7 @@ buckwalterSpecs =
       it ("should when given capital G return " ++
           "ARABIC LETTER GAF") $ do
         deromanization 'G' `shouldBe` 'گ'
+      it ("should return space for space") $ do
+        deromanization ' ' `shouldBe` ' '
+      it ("should return question mark for Arabic question mark") $ do
+        deromanization '?' `shouldBe` '؟'
