@@ -55,7 +55,9 @@ romanization 'گ' = 'G'
 
 -- The following are not defined in the Buckwalter transliteration system
 -- but are needed in practice
-romanization '؟' = '?'  -- Question mark
+romanization '؟' = '?'  -- question mark
+romanization '،' = ','  -- comma
+romanization '؛' = ';'  -- semicolon
 romanization  x = x
 
 
@@ -115,5 +117,7 @@ deromanization 'G'  =  'گ'
 
 -- The following are not defined in Buckwalter transliteration
 -- but are needed in practice.
-deromanization '?'  =  '؟'
+deromanization '?'  =  '؟'  -- question mark
+deromanization ','  =  '،'  -- comma
+deromanization ';'  =  '؛'  -- semicolon
 deromanization  x   =   x
