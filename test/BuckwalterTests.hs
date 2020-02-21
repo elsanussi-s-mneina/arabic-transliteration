@@ -163,6 +163,11 @@ buckwalterSpecs =
         romanization ' ' `shouldBe` ' '
       it ("should return question mark for Arabic question mark") $ do
         romanization '؟' `shouldBe` '?'
+      it ("should return comma for Arabic comma") $ do
+        romanization '،' `shouldBe` ','
+      it ("should return semicolon for Arabic semicolon") $ do
+        romanization '؛' `shouldBe` ';'
+
     describe "deromanization" $ do
       it "should when given an apostrophe return ARABIC LETTER HAMZA" $ do
         deromanization '\'' `shouldBe` 'ء'
@@ -319,3 +324,7 @@ buckwalterSpecs =
         deromanization ' ' `shouldBe` ' '
       it ("should return Arabic question mark for question mark") $ do
         deromanization '?' `shouldBe` '؟'
+      it ("should return Arabic comma for comma") $ do
+        deromanization ',' `shouldBe` '،'
+      it ("should return Arabic semicolon for semicolon") $ do
+        deromanization ';' `shouldBe` '؛'
