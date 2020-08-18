@@ -22,8 +22,29 @@ iso233_2Specs =
           "(t) for ARABIC LETTER TEH") $ do
         romanization_iso232 'ت' `shouldBe` 't'
       it ("should return LATIN SMALL LETTER T WITH LINE BELOW " ++
-          " for ARABIC LETTER THEH") $ do
+          "for ARABIC LETTER THEH") $ do
         romanization_iso232 'ث' `shouldBe` 'ṯ'
       it ("should return LATIN SMALL LETTER G WITH CARON " ++
-          " for ARABIC LETTER JEEM") $ do
+          "for ARABIC LETTER JEEM") $ do
          romanization_iso232 'ج' `shouldBe` 'ǧ'
+      it ("should return LATIN SMALL LETTER H WITH DOT BELOW " ++
+          "for ARABIC LETTER HAH") $ do
+         romanization_iso232 'ح' `shouldBe` 'ḥ'
+      it ("should return LATIN SMALL LETTER H WITH LINE BELOW " ++
+          "for ARABIC LETTER KHAH") $ do
+         romanization_iso232 'خ' `shouldBe` 'ẖ'
+      it ("should return LATIN SMALL LETTER D " ++
+          "for ARABIC LETTER DAL") $ do
+         romanization_iso232 'د' `shouldBe` 'd'
+      it ("should return LATIN SMALL LETTER D WITH LINE BELOW " ++
+          "for ARABIC LETTER THAL") $ do
+         romanization_iso232 'ذ' `shouldBe` 'ḏ'
+      it ("should return LATIN SMALL LETTER R " ++
+          "for ARABIC LETTER REH") $ do
+         romanization_iso232 'ر' `shouldBe` 'r'
+      it ("should return LATIN SMALL LETTER Z " ++
+          "for ARABIC LETTER ZAIN") $ do
+          romanization_iso232 'ز' `shouldBe` 'z'
+      it ("should return LATIN SMALL LETTER S " ++
+          "for ARABIC LETTER SEEN") $ do
+          romanization_iso232 'س' `shouldBe` 's'
