@@ -48,3 +48,6 @@ iso233_2Specs =
       it ("should return LATIN SMALL LETTER S " ++
           "for ARABIC LETTER SEEN") $ do
           romanization_iso232 'س' `shouldBe` 's'
+      it ("should return LATIN SMALL LETTER S WITH CARON " ++
+          "for ARABIC LETTER SHEEN") $ do
+          romanization_iso232 'ش' `shouldBe` 'š'

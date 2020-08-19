@@ -29,3 +29,5 @@ romanization_iso232 char = case char of
      -> 'z'
   'س'
      -> 's'
+  'ش'
+     -> 'š'
