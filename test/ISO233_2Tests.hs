@@ -51,3 +51,58 @@ iso233_2Specs =
       it ("should return LATIN SMALL LETTER S WITH CARON " ++
           "for ARABIC LETTER SHEEN") $ do
           romanization_iso232 'ش' `shouldBe` 'š'
+      it ("should return LATIN SMALL LETTER S WITH DOT BELOW " ++
+          "for ARABIC LETTER SAD") $ do
+          romanization_iso232 'ص' `shouldBe` 'ṣ'
+      it ("should return LATIN SMALL LETTER D WITH DOT BELOW " ++
+          "for ARABIC LETTER DAD") $ do
+          romanization_iso232 'ض' `shouldBe` 'ḍ'
+      it ("should return LATIN SMALL LETTER T WITH DOT BELOW " ++
+          "for ARABIC LETTER TAH") $ do
+          romanization_iso232 'ط' `shouldBe` 'ṭ'
+      it ("should return LATIN SMALL LETTER Z WITH DOT BELOW " ++
+          "for ARABIC LETTER ZAH") $ do
+          romanization_iso232 'ظ' `shouldBe` 'ẓ'
+      it ("should return MODIFIER LETTER LEFT HALF RING " ++
+          "for ARABIC LETTER AIN") $ do
+          romanization_iso232 'ع' `shouldBe` 'ʿ'
+      it ("should return LATIN SMALL LETTER G WITH DOT ABOVE " ++
+          "for ARABIC LETTER GHAIN") $ do
+          romanization_iso232 'غ' `shouldBe` 'ġ'
+      it ("should return LATIN SMALL LETTER F " ++
+          "for ARABIC LETTER FEH") $ do
+          romanization_iso232 'ف' `shouldBe` 'f'
+      it ("should return LATIN SMALL LETTER Q " ++
+          "for ARABIC LETTER QAF") $ do
+          romanization_iso232 'ق' `shouldBe` 'q'
+      it ("should return LATIN SMALL LETTER K " ++
+          "for ARABIC LETTER KAF") $ do
+          romanization_iso232 'ك' `shouldBe` 'k'
+      it ("should return LATIN SMALL LETTER L " ++
+          "for ARABIC LETTER LAM") $ do
+          romanization_iso232 'ل' `shouldBe` 'l'
+      it ("should return LATIN SMALL LETTER M " ++
+          "for ARABIC LETTER MEEM") $ do
+          romanization_iso232 'م' `shouldBe` 'm'
+      it ("should return LATIN SMALL LETTER N " ++
+          "for ARABIC LETTER NOON") $ do
+          romanization_iso232 'ن' `shouldBe` 'n'
+      it ("should return LATIN SMALL LETTER H " ++
+          "for ARABIC LETTER HEH") $ do
+          romanization_iso232 'ه' `shouldBe` 'h'
+      it ("should return LATIN SMALL LETTER T WITH DIAERESIS " ++
+          "for ARABIC LETTER TEH MARBUTA") $ do
+          romanization_iso232 'ة' `shouldBe` 'ẗ'
+      it ("should return LATIN SMALL LETTER W " ++
+          "for ARABIC LETTER WAW") $ do
+          romanization_iso232 'و' `shouldBe` 'w'
+      it ("should return LATIN SMALL LETTER Y " ++
+          "for ARABIC LETTER YEH") $ do
+          romanization_iso232 'ي' `shouldBe` 'y'
+
+      {-
+      Unit test template:
+      it ("should return " ++
+          "for ") $ do
+          romanization_iso232 '' `shouldBe` ''
+      -}
