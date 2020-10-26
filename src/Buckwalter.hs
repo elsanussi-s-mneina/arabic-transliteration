@@ -31,78 +31,62 @@ romanization '\x0627' = 'A'
 
 romanization '\x0628' = 'b'
 -- ب
--- ARABIC LETTER BEH
--- Unicode: U+0628
+-- ARABIC LETTER BEH (Unicode: U+0628) becomes LATIN SMALL LETTER B (Unicode: U+0062).
 
 romanization '\x0629' = 'p'
 -- ة
--- ARABIC LETTER TEH MARBUTA
--- Unicode: U+0629
+-- ARABIC LETTER TEH MARBUTA (Unicode: U+0629) becomes LATIN SMALL LETTER P (Unicode: U+0070).
 
 romanization '\x062A' = 't'
 -- ت
--- ARABIC LETTER TEH
--- Unicode: U+062A
+-- ARABIC LETTER TEH (Unicode: U+062A) becomes LATIN SMALL LETTER T (Unicode: U+0074).
 
 romanization '\x062B' = 'v'
 -- ث
--- ARABIC LETTER THEH
--- Unicode: U+062B
+-- ARABIC LETTER THEH (Unicode: U+062B) becomes LATIN SMALL LETTER V (Unicode: U+0076).
 
 romanization '\x062C' = 'j'
 -- ج
--- ARABIC LETTER JEEM
--- Unicode: U+062C
+-- ARABIC LETTER JEEM (Unicode: U+062C) becomes LATIN SMALL LETTER J (Unicode: U+006A).
 
 romanization '\x062D' = 'H'
 -- ح
--- ARABIC LETTER HAH
--- Unicode: U+062D
+-- ARABIC LETTER HAH (Unicode: U+062D) becomes LATIN CAPITAL LETTER H (Unicode: U+0048).
 
 romanization '\x062E' = 'x'
 -- خ
--- ARABIC LETTER KHAH
--- Unicode: U+062E
+-- ARABIC LETTER KHAH (Unicode: U+062E) becomes LATIN SMALL LETTER X (Unicode: U+0078).
 
 romanization '\x062F' = 'd'
 -- د
--- ARABIC LETTER DAL
--- Unicode: U+062F
+-- ARABIC LETTER DAL (Unicode: U+062F) becomes LATIN SMALL LETTER D (Unicode: U+0064).
 
 romanization '\x0630' = '*'
 -- ذ
--- ARABIC LETTER THAL
--- Unicode: U+0630
+-- ARABIC LETTER THAL (Unicode: U+0630) becomes ASTERISK (Unicode: U+002A).
 
 romanization '\x0631' = 'r'
 -- ر
--- ARABIC LETTER REH
--- Unicode: U+0631
+-- ARABIC LETTER REH (Unicode: U+0631) becomes LATIN SMALL LETTER R (Unicode: U+0072).
 
 romanization '\x0632' = 'z'
 -- ز
--- ARABIC LETTER ZAIN
--- Unicode: U+0632
+-- ARABIC LETTER ZAIN (Unicode: U+0632) becomes LATIN SMALL LETTER Z (Unicode: U+007A).
 
 romanization '\x0633' = 's'
 -- س
--- ARABIC LETTER SEEN
--- Unicode: U+0633
-
+-- ARABIC LETTER SEEN (Unicode: U+0633) becomes LATIN SMALL LETTER S (Unicode: U+0073).
 romanization '\x0634' = '$'
 -- ش
--- ARABIC LETTER SHEEN
--- Unicode: U+0634
+-- ARABIC LETTER SHEEN (Unicode: U+0634) becomes DOLLAR SIGN (Unicode: U+0024).
 
 romanization '\x0635' = 'S'
 -- ص
--- ARABIC LETTER SAD
--- Unicode: U+0635
+-- ARABIC LETTER SAD (Unicode: U+0635) becomes LATIN CAPITAL LETTER S (Unicode: U+0053).
 
 romanization '\x0636' = 'D'
 -- ض
--- ARABIC LETTER DAD
--- Unicode: U+0636
+-- ARABIC LETTER DAD (Unicode: U+0636) becomes LATIN CAPITAL LETTER D (Unicode: U+0044).
 
 romanization '\x0637' = 'T'
 -- ط
