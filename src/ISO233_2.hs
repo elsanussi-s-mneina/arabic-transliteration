@@ -1,12 +1,11 @@
 module ISO233_2 where
 
--- Note to developer we keep the left hand side of each
--- "arrow" expression on a separate line from the right hand side
--- due to difficulties working with right to left text
--- in an editor.
 romanization_iso232 char = case char of
-  'ء'
+  '\x0621'
      -> 'ʾ'
+-- ء
+-- ARABIC LETTER HAMZA
+-- Unicode: U+0621
   '\x0628'
      -> 'b'
 -- ب
