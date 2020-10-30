@@ -1,12 +1,12 @@
 module Main (main) where
 
-import Test.Hspec
+import LittleTest
 
-import BuckwalterTests
+import qualified BuckwalterTests
+
 import ISO233_2Tests
 
 main :: IO ()
-main =
+main = 
   do
-  hspec buckwalterSpecs
-  hspec iso233_2Specs
+  LittleTest.reportOnTests (BuckwalterTests.tests ++ ISO233_2Tests.tests)
