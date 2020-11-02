@@ -56,7 +56,7 @@ main =
   argv <- getArgs
   (opts, fname) <- translitOptions argv
   let translitFunc = if BuckwalterToArabic == optAction opts then deromanization else romanization
-  if (length fname == 1)
+  if length fname == 1
   then do
       putStrLn ("The file name is " ++ (concat fname))
       handle <- openFile (fname !! 0) ReadMode
