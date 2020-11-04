@@ -1,17 +1,17 @@
 name:                arabic-transliteration
-version:             0.1.0.0
+version:             0.1.0.1
 -- synopsis:
--- description:
--- homepage:            https://github.com/githubuser/arabic-transliteration#readme
+description: A way to represent Arabic text in Latin letters using the Buckwalter transliteration system, or the ISO-232 system.
+homepage:            https://github.com/elsanussi-s-mneina/arabic-transliteration#readme
 license:             BSD3
 -- license-file:        LICENSE
 author:              Elsanussi Mneina
 maintainer:          elsanussi.m@outlook.com
-copyright:           2019 Elsanussi Mneina
+copyright:           2020 Elsanussi Mneina
 category:            Linguistics
 build-type:          Simple
 cabal-version:       >=1.10
--- extra-source-files:  README.md
+extra-source-files:  README.md
 
 
 executable arabic-transliteration
