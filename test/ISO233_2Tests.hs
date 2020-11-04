@@ -17,7 +17,8 @@ makeTest :: String -> Char -> Char -> Test
 makeTest testName arabicChar latinChar = Test (testName, romanization_iso232 arabicChar == latinChar && arabicChar == deromanization_iso232 latinChar)
 
 
-hamzaSpec = makeTest "MODIFIER LETTER RIGHT HALF RING (U+02BE) for ARABIC LETTER HAMZA (U+0621)" '\x0621' '\x02BE'
+hamzaSpec = makeTest "MODIFIER VERTICAL LINE (U+02C8) for ARABIC LETTER HAMZA (U+0621)" '\x0621' '\x02C8'
+alefSpec = makeTest "MODIFIER LETTER RIGHT HALF RING (U+02BE) for ARABIC LETTER ALEF (U+0627)" '\x0627' '\x02BE'
 behSpec = makeTest "LATIN SMALL LETTER B (U+0062) for ARABIC LETTER BEH (U+0628)" '\x0628' '\x0062'
 tehSpec = makeTest "LATIN SMALL LETTER T (U+0074) for ARABIC LETTER TEH (U+062A)" '\x062A' '\x0074'
 thehSpec = makeTest "LATIN SMALL LETTER T WITH LINE BELOW (U+1E6F) for ARABIC LETTER THEH (U+062B)" '\x062B' '\x1E6F'
@@ -51,8 +52,22 @@ noonSpec = makeTest "LATIN SMALL LETTER N (U+006E) for ARABIC LETTER NOON (U+064
 hehSpec = makeTest "LATIN SMALL LETTER H (U+0068) for ARABIC LETTER HEH (U+0647)" '\x0647' '\x0068'
 tehMarbutaSpec = makeTest "LATIN SMALL LETTER T (U+1E97) WITH DIAERESIS for ARABIC LETTER TEH MARBUTA (U+0629)" '\x0629' '\x1E97'
 wawSpec = makeTest "LATIN SMALL LETTER W (U+0077) for ARABIC LETTER WAW (U+0648)" '\x0648' '\x0077'
+alefMaksuraSpec = makeTest "LATIN SMALL LETTER Y WITH GRAVE (U+1EF3) for ARABIC LETTER ALEF MAKSURA (U+0649)" '\x0649' '\x1EF3'
 yehSpec = makeTest "LATIN SMALL LETTER Y (U+0079) for ARABIC LETTER YEH (U+064A)" '\x064A' '\x0079'
+
+
+fathatanSpec = makeTest "LATIN SMALL LETTER A WITH ACUTE (U+00E1) for ARABIC FATHATAN (U+064B)" '\x064B' '\x00E1'
+dammatanSpec = makeTest "LATIN CAPITAL LETTER U WITH ACUTE (U+00FA) for ARABIC DAMMATAN (U+064C)" '\x064C' '\x00FA'
+kasratanSpec = makeTest "LATIN CAPITAL LETTER I WITH ACUTE (U+00ED) for ARABIC KASRATAN (U+064D)" '\x064D' '\x00ED'
+fathaSpec = makeTest "LATIN SMALL LETTER A (U+0061) for ARABIC FATHA (U+064E)" '\x064E' '\x0061'
+dammaSpec = makeTest "LATIN SMALL LETTER U (U+0075) for ARABIC DAMMA (U+064F)" '\x064F' '\x0075'
+kasraSpec = makeTest "LATIN SMALL LETTER I (U+0069) for ARABIC KASRA (U+0650)" '\x0650' '\x0069'
+shaddaSpec = makeTest "MACRON (U+00AF) for ARABIC SHADDA (U+0651)" '\x0651' '\x00AF'
+sukunSpec = makeTest "RING ABOVE (U+02DA) for ARABIC SUKUN (U+0652)" '\x0652' '\x02DA'
+superscriptAlefSpec = makeTest "LATIN SMALL LETTER A WITH CIRCUMFLEX (U+00E2) for ARABIC LETTER SUPERSCRIPT ALEF (U+0670)" '\x0670' '\x00E2'
+
+
 
 tests :: [Test]
 tests = 
-  [ hamzaSpec, behSpec, tehSpec, thehSpec, jeemSpec, hahSpec, khahSpec, dalSpec, thalSpec, rehSpec, zainSpec, seenSpec, sheenSpec, sadSpec, dadSpec, tahSpec, zahSpec, ainSpec, ghainSpec, fehSpec, qafSpec, kafSpec, lamSpec, meemSpec, noonSpec, hehSpec, tehMarbutaSpec, wawSpec, yehSpec]
+  [ hamzaSpec, alefSpec, behSpec, tehSpec, thehSpec, jeemSpec, hahSpec, khahSpec, dalSpec, thalSpec, rehSpec, zainSpec, seenSpec, sheenSpec, sadSpec, dadSpec, tahSpec, zahSpec, ainSpec, ghainSpec, fehSpec, qafSpec, kafSpec, lamSpec, meemSpec, noonSpec, hehSpec, tehMarbutaSpec, wawSpec, alefMaksuraSpec, yehSpec, fathatanSpec, dammatanSpec, kasratanSpec, fathaSpec, dammaSpec, kasraSpec, shaddaSpec, sukunSpec, superscriptAlefSpec]

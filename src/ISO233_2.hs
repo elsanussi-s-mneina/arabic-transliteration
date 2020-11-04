@@ -1,13 +1,20 @@
 module ISO233_2 where
 
-romanization_iso232 '\x0621' = '\x02BE'
+romanization_iso232 '\x0621' = '\x02C8'
 -- ء
 -- ARABIC LETTER HAMZA
 -- Unicode: U+0621
 
 -- ʾ
--- MODIFIER LETTER RIGHT HALF RING
--- Unicode: U+02BE
+-- MODIFIER LETTER VERTICAL LINE
+-- Unicode: U+02C8
+
+romanization_iso232 '\x0627' = '\x02BE'
+-- ا
+-- ARABIC LETTER ِALEF (U+0627) 
+-- ʾ
+-- MODIFIER LETTER RIGHT HALF RING (U+02BE)
+
 
 romanization_iso232 '\x0628' = '\x0062'
 -- ب
@@ -200,10 +207,28 @@ romanization_iso232 '\x0648' = '\x0077'
 -- ARABIC LETTER WAW
 -- Unicode: U+0648
 
+romanization_iso232 '\x0649' = '\x1EF3'
+-- ى
+-- LATIN SMALL LETTER Y WITH GRAVE (U+1EF3) 
+-- ỳ
+-- ARABIC LETTER ALEF MAKSURA (U+0649)
+
 romanization_iso232 '\x064A' = '\x0079'
 -- ي
 -- ARABIC LETTER YEH
 -- Unicode: U+064A
+
+romanization_iso232 '\x064B' = '\x00E1'
+romanization_iso232 '\x064C' = '\x00FA'
+romanization_iso232 '\x064D' = '\x00ED'
+romanization_iso232 '\x064E' = '\x0061'
+romanization_iso232 '\x064F' = '\x0075'
+romanization_iso232 '\x0650' = '\x0069'
+romanization_iso232 '\x0651' = '\x00AF'
+romanization_iso232 '\x0652' = '\x02DA'
+romanization_iso232 '\x0670' = '\x00E2'
+
+
 
 romanization_iso232 x = x
 
@@ -211,7 +236,9 @@ romanization_iso232 x = x
 
 
 
-deromanization_iso232 '\x02BE' = '\x0621'
+
+deromanization_iso232 '\x02C8' = '\x0621'
+deromanization_iso232 '\x02BE' = '\x0627'
 deromanization_iso232 '\x0062' = '\x0628'
 deromanization_iso232 '\x0074' = '\x062A'
 deromanization_iso232 '\x1E6F' = '\x062B'
@@ -239,5 +266,16 @@ deromanization_iso232 '\x006E' = '\x0646'
 deromanization_iso232 '\x0068' = '\x0647'
 deromanization_iso232 '\x1E97' = '\x0629'
 deromanization_iso232 '\x0077' = '\x0648'
+deromanization_iso232 '\x1EF3' = '\x0649'
 deromanization_iso232 '\x0079' = '\x064A'
+deromanization_iso232 '\x00E1' = '\x064B'
+deromanization_iso232 '\x00FA' = '\x064C'
+deromanization_iso232 '\x00ED' = '\x064D'
+deromanization_iso232 '\x0061' = '\x064E'
+deromanization_iso232 '\x0075' = '\x064F'
+deromanization_iso232 '\x0069' = '\x0650'
+deromanization_iso232 '\x00AF' = '\x0651'
+deromanization_iso232 '\x02DA' = '\x0652'
+deromanization_iso232 '\x00E2' = '\x0670'
+
 deromanization_iso232 x = x
